@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole Spacing Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hole Spacing Visualizer</h1>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="axis-width">Axis Width (mm):</label>
+            <input type="number" id="axis-width" value="500" max="2000">
+        </div>
+
+        <div class="control-group">
+            <label for="num-holes">Number of Holes:</label>
+            <input type="number" id="num-holes" value="5" min="2" max="100">
+        </div>
+
+        <div class="control-group">
+            <label for="hole-diameter">Hole Diameter (mm):</label>
+            <input type="number" id="hole-diameter" value="5" min="1" max="50">
+        </div>
+        <div class="control-group">
+            <label for="margin">Margin (mm):</label>
+            <input type="number" id="margin" value="20" min="0" max="100">
+        </div>
+    </div>
+
+    <button id="update-btn">Update Visualization</button>
+
+    <div class="canvas-container">
+        <canvas id="visualization" height="200"></canvas>
+    </div>
+
+    <div class="measurements">
+        <h3>Measurements</h3>
+        <p>Axis Width: <span id="display-width">500</span> mm</p>
+        <p>Number of Holes: <span id="display-holes">5</span></p>
+        <p>Hole Diameter: <span id="display-diameter">10</span> mm</p>
+        <p>Distance Between Holes: <span id="display-spacing">125</span> mm</p>
+        <p>Distance from Edge to First/Last Hole: <span id="display-edge">62.5</span> mm</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
