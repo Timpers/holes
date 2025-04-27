@@ -4,6 +4,8 @@
 
 The **Hole Spacing Visualizer** is a simple web-based tool that allows users to visualize the placement of holes along an axis. It calculates and displays the spacing between holes, the distance from the edges, and provides a graphical representation of the layout.
 
+See the demo at: [Holes Visualizer](https://www.tdub.co.uk/holes/)
+
 ## Features
 
 - **Dynamic Input Fields**: Adjust the axis width, number of holes, hole diameter, and margins dynamically.
